@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.carrito {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: black;
+  box-shadow: -2px 0 5px black;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px white;
+  border: 2px solid, white;
+}
+
+.carrito.abierto {
+  transform: translateX(0);
+  display: block;
+}
+
+.carrito #carrito-contenido {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.carrito button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.carrito {
+  display: none;
+}
+.carrito h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.carrito #carrito-contenido div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.carrito #carrito-contenido img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.carrito #carrito-contenido p {
+  margin: 0;
+  color: white;
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+}
+.navbar img {
+  height: 60px;
+  margin-right: 30px;
+  width: 120px;
+  object-fit: contain;
+}
+.navbar .navbar-links, .navbar .navbar-icons {
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  font-size: 18px;
+  color: white;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+.navbar a:focus,
+.navbar a:hover {
+  color: white;
+}
+.navbar a:focus:after,
+.navbar a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+.navbar a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.navbar .icon {
+  font-size: 2px;
+}
+
+* {
+  background: transparent;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  font-size: 120px;
+}
+
+.imagen {
+  width: 99vw;
+  height: calc(100vh - 82px);
+  object-fit: cover;
+  display: block;
+}
+
+.general h2 {
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.divisorOne {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.divisorOne img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.videoRegalos {
+  height: 620px;
+  width: 100%;
+  object-fit: cover;
+}
+
+main p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: Libre Baskerville;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Nunito";
+}
+
+h3 {
+  color: white;
+  font-size: 25x;
+  margin-left: 30px;
+  font-family: "Nunito";
+}
+
+#checkboxContainer {
+  display: flex;
+  margin-left: 50px;
+  gap: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+#checkboxContainer label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.Contenedores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.filtrado, .filtrado3 {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #96CAB4;
+}
+
+.filtrado1, .filtrado2 {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #45ADD2;
+}
+
+.filtrado:first-of-type {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.filtrado2:first-of-type {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.filtrado:last-of-type {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+
+.filtrado2:last-of-type {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+.contenedorFiltrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 0 auto;
+}
+
+#checkboxContainer {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.ideaRegaloTitle {
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 70px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.logoImagen {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.fotos-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.foto {
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  box-shadow: 0 2px 5px black;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img {
+  width: 190px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.reloj {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.reloj img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.reloj h3 {
+  margin: 10px 0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.reloj p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.reloj:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px black;
+}
+
+.reloj:hover img {
+  transform: scale(1.1);
+}
+
+button {
+  height: 50px;
+  margin: 5px;
+  width: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+button:hover {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
+button:active {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  transition: 100ms;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+.containerTwo:hover {
+  background-color: 0acee;
+  transition-duration: 0.3s;
+}
+
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: white;
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.titleGrid {
+  font-size: 50px;
+  text-align: center;
+}
+
+.pGrid {
+  font-size: 22px;
+  text-align: center;
+}
+
+.fondo {
+  background-color: #e1bc03;
+}
+
+.h2 {
+  color: black;
+  font-size: 50px;
+  font-family: "Libre Baskerville";
+}
+
+.h3 {
+  color: black;
+  font-size: 25px;
+}
+
+.divisorTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  height: calc(100vh - 98px);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.divisorTwo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.divisorTwo .fotoSimpson {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.divisorTwo .fotoSimpson img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.informacion {
+  background-color: blue;
+}
+
+.informacion1 {
+  background-color: red;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.portadaDeSimpson {
+  width: 100%;
+  height: auto;
+}
+
+.portadaSimpson {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: auto;
+}
+
+.cyberpunk-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+  content: "";
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

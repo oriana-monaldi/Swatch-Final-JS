@@ -1,0 +1,99 @@
+.fotos-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.foto {
+    border: 1px solid #333; 
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    box-shadow: 0 2px 5px  $color2;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img {
+    width: 190px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.reloj {
+    padding: 10px;
+    border: 1px solid #333; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px $color2;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    }
+    h3 {
+    margin: 10px 0;
+    color: $color1;
+    font-family: 'Open Sans', sans-serif;
+    }
+    p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: $color1;
+    font-family: 'Open Sans', sans-serif;
+}
+}
+
+// Efecto hover 
+.reloj:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px  $color2; 
+}
+
+.reloj:hover img {
+    transform: scale(1.1); 
+}
+
+//button de la card
+button {
+    height: 50px;
+    margin: 5px;
+    width: 200px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+button:hover {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+button:active {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    transition: 100ms;
+}

@@ -1,0 +1,46 @@
+.video-container {
+    width: 100%;
+    max-width: 800px; 
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+//grid
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    box-sizing: border-box;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.titleGrid {
+    font-size: 50px;
+    text-align: center;
+}
+.pGrid {
+    font-size: 22px;
+    text-align: center;
+}
