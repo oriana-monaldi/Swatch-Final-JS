@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relojes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body> 
-
     <header>
         <div class="navbar">
-            <a href="./index.html"><img class="logo" src="./assets/swatchLogo.png" alt="Logo"></a>
+            <a href="./index.html"><img class="logo" src="../assets/swatchLogo.png" alt="Logo"></a>
             <div class="navbar-links">
-                <a class="navbarlink" href="./relojes.html">RELOJES</a>
-                <a class="navbarlink" href="./regalos.html">REGALOS</a>
-            <a class="navbarlink" href="./moonswatch.html">MOONSWATCH</a>
-                <a class="navbarlink" href="./theSimpson.html">THE SIMPSON</a>
+                <a class="navbarlink" href="../pages/relojes.html">WATCHES</a>
+                <a class="navbarlink" href="../pages/regalos.html">GIFTS</a>
+                <a class="navbarlink" href="../pages/moonswatch.html">MOONSWATCH</a>
+                <a class="navbarlink" href="../pages/theSimpson.html">THE SIMPSON</a>
             </div>
             <div class="navbar-icons">
                 <a href="#" class="icono">🛒</a>
@@ -23,65 +22,65 @@
         </div>
     </header>
     <main>
-        <h1>Todos los Relojes</h1>
-        <p>Descubre todos nuestros relojes, desde clásicos emblemáticos hasta llamativos diseños contemporáneos y estilos de la cultura popular. No importa si quieres hacer una declaración o mostrar tu lado más divertido, tenemos un modelo para cada estilo y momento.</p>
+        <h1>All Watches</h1>
+        <p>Discover all our watches, from iconic classics to eye-catching contemporary designs and pop culture styles. It doesn't matter if you want to make a statement or show your fun side, we have a model for every style and moment.</p>
         
         <div class="divisorOne">
-            <img src="./assets/relojes2.jpg" alt="Relojes 2">
-            <img src="./assets/relojes1.jpg" alt="Relojes 1">
+            <img src="../assets/relojes2.jpg" alt="Relojes 2">
+            <img src="../assets/relojes1.jpg" alt="Relojes 1">
         </div>
         <div class="Contenedores">
             
             <div class="filtrado1">
-                <h3>Color del reloj:</h3>
+                <h3>Watches color:</h3>
                 <div id="checkboxContainer">
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxRojo" class="cyberpunk-checkbox" value="Rojo">Rojo
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxAmarillo" class="cyberpunk-checkbox" value="Amarillo">
-                        Amarillo
+                        Yellow
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxRosa" class="cyberpunk-checkbox" value="Rosa">
-                        Rosa
+                        Pink
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxBlanco" class="cyberpunk-checkbox" value="Blanco">
-                        Blanco
+                        White
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxNegro" class="cyberpunk-checkbox" value="Negro">
-                        Negro
+                        Black
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxAzul" class="cyberpunk-checkbox" value="Azul">
-                        Azul
+                        Blue
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxCeleste" class="cyberpunk-checkbox" value="Celeste">
-                        Celeste
+                        Light-blue
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxVerde" class="cyberpunk-checkbox" value="Verde">
-                        Verde
+                        Green
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxNaranja" class="cyberpunk-checkbox" value="Naranja">
-                        Naranja
+                        Orange
                     </label>
                 </div>
             </div>
             <div class="filtrado2">
-                <h3>Categoria:</h3>
+                <h3>Category</h3>
                 <div id="checkboxContainer">
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxMujer" class="cyberpunk-checkbox" value="Mujer">
-                        Mujer
+                        Woman
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxHombre" class="cyberpunk-checkbox" value="Hombre">
-                        Hombre
+                        Man
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxUnisex" class="cyberpunk-checkbox" value="Unisex">
@@ -94,11 +93,11 @@
                 <div id="checkboxContainer">
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxUrbano" class="cyberpunk-checkbox" value="Urbano">
-                        Analogico
+                        Classic
                     </label>
                     <label class="cyberpunk-checkbox-label">
                         <input type="checkbox" id="checkboxDeportivo" class="cyberpunk-checkbox" value="Deportivo">
-                        Deportivo
+                        Sport
                     </label>
                 </div>
             </div>
@@ -107,16 +106,16 @@
     </main>
          <!-- Carrito de Compras  -->
         <div id="carrito" class="carrito">
-            <h2>Carrito de Compras</h2>
+            <h2>Cart</h2>
             <div id="carrito-contenido"></div>
-            <button id="vaciar-carrito">Vaciar Carrito</button>
+            <button id="vaciar-carrito">Empty Cart</button>
         </div>
 
-    <script src="stock.js"></script>
-    <script src="script.js"></script>
-    <script src="carrito.js"></script>
-    <script src="relojes.js"></script>
-    <script src="filtrado.js"></script>
+    <script src="../js/stock.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/relojes.js"></script>
+    <script src="../js/filtrado.js"></script>
 
     <footer>
         <div class="card">

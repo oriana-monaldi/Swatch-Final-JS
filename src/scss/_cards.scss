@@ -1,8 +1,8 @@
 .fotos-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    padding: 20px;
-    width: 100%;
+    padding: 10px;
+    width: 90%;
     box-sizing: border-box;
 }
 
@@ -13,8 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 100px;
+    width: 400px;
     height: auto;
     box-shadow: 0 2px 5px  $color2;
     padding: 10px;
@@ -23,8 +22,9 @@
 }
 
 img {
-    width: 190px;
+    width: 180px;
     height: 210px;
+    margin-top: 20px;
     object-fit: cover;
     border-radius: 4px;
 }

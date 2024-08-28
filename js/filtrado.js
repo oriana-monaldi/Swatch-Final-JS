@@ -54,6 +54,3 @@ function aplicarFiltros() {
 [checkboxMujer, checkboxHombre, checkboxUnisex, checkboxRojo, checkboxAmarillo, checkboxRosa, checkboxBlanco, checkboxNegro, checkboxAzul, checkboxCeleste, checkboxVerde, checkboxNaranja, checkboxUrbano, checkboxDeportivo].forEach(checkbox => checkbox.addEventListener('change', aplicarFiltros));
 
 aplicarFiltros();
-
-
-

@@ -1,12 +1,12 @@
 * {
-    background: transparent;
+  background: transparent;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: $color2 ;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: $color2 ;
+  margin: 0;
+  padding: 0;
 }
 
 .icon {
@@ -14,11 +14,14 @@ body {
 }
 
 //imagen de portada
+.contenedorImagen {
+  width: 100%;
+}
 .imagen {
-    width: 99vw; 
-    height: calc(100vh - 82px); 
-    object-fit: cover; 
-    display: block; 
+  width: 100%; 
+  height: calc(100vh - 82px); 
+  object-fit: cover; 
+  display: block; 
 }
 
 .general{

@@ -6,7 +6,7 @@ const reloj =  [
         clasificacion: "Mujer",
         color: "Rosa",
         tipo: "Urbano",
-        img: "./assets/1.avif"
+        img: "../assets/1.avif"
     },
     {
         id: 2,
@@ -15,17 +15,17 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Negro",
         tipo: "Urbano",
-        img: "./assets/3.avif"
+        img: "../assets/3.avif"
 
     }, 
     {
         id: 3,
-        nombre: "Bklue Rails",
+        nombre: "Blue Rails",
         precio: 172000,
         clasificacion: "Hombre",
         color: "Azul",
         tipo: "Urbano",
-        img: "./assets/4.avif"
+        img: "../assets/4.avif"
 
     },
     {
@@ -35,7 +35,7 @@ const reloj =  [
         clasificacion: "Mujer",
         color: "Blanco",
         tipo: "Deportivo",
-        img: "./assets/5.avif"
+        img: "../assets/5.avif"
 
     },
     {
@@ -45,7 +45,7 @@ const reloj =  [
         clasificacion: "Mujer",
         color: "Rosa",
         tipo: "Deportivo",
-        img: "./assets/6.avif"
+        img: "../assets/6.avif"
     },
     {
         id: 6,
@@ -54,7 +54,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Celeste",
         tipo: "Deportivo",
-        img: "./assets/8.avif"
+        img: "../assets/8.avif"
     },
     {  
         id: 7,
@@ -63,7 +63,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Amarillo",
         tipo: "Urbano",
-        img: "./assets/20.avif"
+        img: "../assets/20.avif"
     },
     { 
         id: 8,
@@ -72,7 +72,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Celeste",
         tipo: "Urbano",
-        img: "./assets/21.avif"
+        img: "../assets/21.avif"
 
     },
     { 
@@ -82,7 +82,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Celeste",  
         tipo: "Urbano",
-        img: "./assets/22.avif",
+        img: "../assets/22.avif",
 
     },
     {
@@ -92,17 +92,17 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Celeste",
         tipo: "Urbano",
-        img: "./assets/23.png"
+        img: "../assets/23.png"
 
     },
     {
         id: 11,
-        nombre: "Wondrous Winter Wonderland",
+        nombre: "Wondrous Winter",
         precio: 215896,
         clasificacion: "Unisex",
         color: "Naranja",
         tipo: "Urbano",
-        img: "./assets/24.avif"
+        img: "../assets/24.avif"
     },
     {
         id: 12,
@@ -111,7 +111,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Rojo",
         tipo: "Urbano",
-        img: "./assets/25.avif"
+        img: "../assets/25.avif"
     },
     { 
         id: 13,
@@ -120,7 +120,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Rojo",
         tipo: "Urbano",
-        img: "./assets/r11.avif"
+        img: "../assets/r11.avif"
     },
     {
         id: 14,
@@ -129,7 +129,7 @@ const reloj =  [
         clasificacion: "Mujer",
         color: "Rosa",
         tipo: "Urbano",
-        img: "./assets/10.avif"
+        img: "../assets/10.avif"
     },
     {
         id: 15,
@@ -138,7 +138,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Amarillo",
         tipo: "Urbano",
-        img: "./assets/11.avif"
+        img: "../assets/11.avif"
     },
     { 
         id: 16,
@@ -147,7 +147,7 @@ const reloj =  [
         clasificacion: "Mujer",
         color: "Verde",
         tipo: "Urbano",
-        img: "./assets/12.avif"
+        img: "../assets/12.avif"
     },
     { 
         id: 17,
@@ -156,7 +156,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Azul",
         tipo: "Urbano",
-        img: "./assets/13.avif"
+        img: "../assets/13.avif"
     },
     { 
         id: 18,
@@ -165,16 +165,16 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Blanco",
         tipo: "Urbano",
-        img: "./assets/r1.avif"
+        img: "../assets/r1.avif"
     },
     { 
         id: 19,
-        nombre: "What if...BlackAgain?",
+        nombre: "What if...Black Again?",
         precio: 235896,
         clasificacion: "Unisex",
         color: "Negro",
         tipo: "Urbano",
-        img: "./assets/R4.avif"
+        img: "../assets/R4.avif"
     },
     {   
         id: 20,
@@ -183,7 +183,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Negro",
         tipo: "Urbano",
-        img: "./assets/r3.avif"
+        img: "../assets/r3.avif"
     },{ 
        id: 21,
         nombre: "Time Whith Any ANderson",
@@ -191,7 +191,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Amarillo",
         tipo: "Deportivo",
-        img: "./assets/r2.avif"
+        img: "../assets/r2.avif"
     },{ 
         id: 22,
         nombre: "Below the Horizon",
@@ -199,7 +199,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Azul",
         tipo: "Deportivo",
-        img: "./assets/r5.avif"
+        img: "../assets/r5.avif"
     },{ 
         id: 23,
         nombre: "Swatch Neon Jelly",
@@ -207,7 +207,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Blanco",
         tipo: "Deportivo",
-        img: "./assets/r6.avif"
+        img: "../assets/r6.avif"
     },{ 
         id: 24,
         nombre: "Swatch Neon Wave",
@@ -215,7 +215,7 @@ const reloj =  [
         clasificacion: "Unisex",
         color: "Verde",        
         tipo: "Deportivo",
-        img: "./assets/47.avif"
+        img: "../assets/47.avif"
     },{ 
         id: 25,
         nombre: "Orange in the Works",
@@ -223,7 +223,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Azul",
         tipo: "Urbano",
-        img: "./assets/r8.avif"
+        img: "../assets/r8.avif"
     },{ 
         id: 26,
         nombre: "Pinkbaya",
@@ -231,7 +231,7 @@ const reloj =  [
         clasificacion: "Mujer",
         color: "Rosa",        
         tipo: "Urbano",
-        img: "./assets/r9.avif"
+        img: "../assets/r9.avif"
     },{ 
         id: 27,
         nombre: "Mision On Earth - Polar Lights",
@@ -239,7 +239,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Verde",        
         tipo: "Urbano",
-        img: "./assets/me1.avif"
+        img: "../assets/me1.avif"
     },{ 
         id: 28,
         nombre: "Mission on Earth - Lava",
@@ -247,7 +247,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Rojo",        
         tipo: "Urbano",
-        img: "./assets/me2.avif"
+        img: "../assets/me2.avif"
     },{ 
         id: 29,
         nombre: "Mission to the Sun",
@@ -255,7 +255,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Amarilo",        
         tipo: "Urbano",
-        img: "./assets/me4.webp"
+        img: "../assets/me4.webp"
     },{ 
         id: 30,
         nombre: "Mission to Mercury",
@@ -263,7 +263,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Gris",        
         tipo: "Urbano",
-        img: "./assets/me5.webp"
+        img: "../assets/me5.webp"
     },{ 
         id: 31,
         nombre: "Mission to Venus",
@@ -271,7 +271,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Rosa",        
         tipo: "Mujer",
-        img: "./assets/me6.webp"
+        img: "../assets/me6.webp"
     },{ 
         id: 32,
         nombre: "Mission on Earth",
@@ -279,7 +279,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Azul",        
         tipo: "Urbano",
-        img: "./assets/me7.avif"
+        img: "../assets/me7.avif"
     },{ 
         id: 33,
         nombre: "Mission to Mars",
@@ -287,7 +287,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Blanco",        
         tipo: "Urbano",
-        img: "./assets/me8.avif"
+        img: "../assets/me8.avif"
     },{ 
         id: 34,
         nombre: "Mission to Pluto",
@@ -295,7 +295,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Gris",        
         tipo: "Urbano",
-        img: "./assets/me9.avif"
+        img: "../assets/me9.avif"
     },{ 
         id: 35,
         nombre: "Mission to Uranus",
@@ -303,7 +303,7 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Celeste",        
         tipo: "Urbano",
-        img: "./assets/m10.webp"
+        img: "../assets/m10.webp"
     },{ 
         id: 36,
         nombre: "Mission to Jupiter",
@@ -311,6 +311,6 @@ const reloj =  [
         clasificacion: "Hombre",
         color: "Negro",        
         tipo: "Urbano",
-        img: "./assets/m11.avif"
+        img: "../assets/m11.avif"
     }
 ]
