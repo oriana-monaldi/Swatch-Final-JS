@@ -45,7 +45,7 @@ body {
   height: 700px;
   object-fit: cover;
 }
- 
+
 .videoRegalos {
   height: 620px;
   width: 100%;
@@ -80,6 +80,7 @@ h3{
 }
 #checkboxContainer {
   display: flex;
+  flex-direction: column;
   margin-left: 50px;
   gap: 30px; 
   color: $color1;
@@ -91,7 +92,7 @@ h3{
   margin-bottom: 5px; 
 }
 
-.Contenedores {
+.contenedores {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: auto auto; 
@@ -99,37 +100,11 @@ h3{
   gap: 20px; 
 }
 
-.filtrado,.filtrado3 {
+.filtrado {
   background-color: $color2;
   padding: 10px;
   border-radius: 5px;
   border: 2px solid $color7; 
-}
-.filtrado1, .filtrado2 {
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid $color8; 
-
-}
-
-.filtrado:first-of-type {
-  grid-column: 1 / 2; 
-  grid-row: 1; 
-}
-
-.filtrado2:first-of-type {
-  grid-column: 2 / 3; 
-  grid-row: 1; 
-}
-
-.filtrado:last-of-type {
-  grid-column: 1 / 2; 
-  grid-row: 2; 
-}
-
-.filtrado2:last-of-type {
-  grid-column: 2 / 3; 
-  grid-row: 2; 
 }
 
 // contenedor de regalos
@@ -167,5 +142,6 @@ h3{
   margin-top: 20px; 
 }
 
-
-
+.divGeneral {
+  display: flex;
+}

@@ -23,16 +23,12 @@ function actualizarCarrito() {
 
     carrito.forEach(producto => {
         const productoElemento = document.createElement('div');
-       
         const imgElemento = document.createElement('img');
         imgElemento.src = producto.img;
-        
         const textoElemento = document.createElement('div');
         textoElemento.innerHTML = `<p>${producto.nombre} - $${producto.precio.toLocaleString()}</p>`;
-
         productoElemento.appendChild(imgElemento);
         productoElemento.appendChild(textoElemento);
-
         carritoContenido.appendChild(productoElemento);
         total += producto.precio;
     });

@@ -1,7 +1,6 @@
 // Función para mostrar los relojes de mujer
 function mostrarRelojesMujer() {
     const relojesMujer = reloj.filter(el => el.clasificacion === 'Mujer');
-    console.log('Relojes Mujer:', relojesMujer); 
 
     const container6 = document.getElementById('container6');
     if (!container6) return;
@@ -16,7 +15,6 @@ mostrarRelojesMujer();
 
 function mostrarRelojesHombre() {
     const relojesHombre = reloj.filter(el => el.clasificacion === 'Hombre');
-    console.log('Relojes Hombre:', relojesHombre); 
 
     const container7 = document.getElementById('container7');
     if (!container7) return; 
@@ -29,7 +27,6 @@ mostrarRelojesHombre();
 
 function mostrarRelojesUnisex() {
     const relojesUnisex = reloj.filter(el => el.clasificacion === 'Unisex');
-    console.log('Relojes Unisex:', relojesUnisex); 
 
     const container8 = document.getElementById('container8');
     if (!container8) return; 
