@@ -17,7 +17,17 @@
 
 .carrito.abierto {
     transform: translateX(0);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+
+.vaciarElCarrito {
+    align-self: flex-end; 
+    margin-top: auto;
 }
 
 .carrito #carrito-contenido {

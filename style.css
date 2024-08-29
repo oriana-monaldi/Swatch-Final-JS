@@ -20,7 +20,17 @@
 
 .carrito.abierto {
   transform: translateX(0);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.vaciarElCarrito {
+  align-self: flex-end;
+  margin-top: auto;
 }
 
 .carrito #carrito-contenido {
@@ -198,7 +208,6 @@ h2 {
 
 h3 {
   color: white;
-  text-align: center;
   font-size: 25x;
   margin-left: 30px;
   font-family: "Nunito";
@@ -209,46 +218,8 @@ a {
   color: black;
 }
 
-#checkboxContainer {
-  display: flex;
-  width: 150px;
-  flex-direction: column;
-  margin-left: 5px;
-  gap: 10px;
-  color: white;
-  font-size: 20px;
-}
-
-#checkboxContainer label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.contenedores {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  margin-bottom: 20px;
-  gap: 20px;
-}
-
 .filtrado {
   background-color: black;
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px solid #96CAB4;
-}
-
-.contenedorFiltrado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  margin: 0 auto;
-}
-
-#checkboxContainer {
-  padding: 20px;
   border-radius: 5px;
 }
 
@@ -284,6 +255,13 @@ a {
   box-sizing: border-box;
 }
 
+/* .contenedores {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    margin-bottom: 20px;
+    gap: 20px; 
+} */
 .foto {
   border: 1px solid #333;
   border-radius: 8px;
@@ -362,13 +340,13 @@ button {
 
 button:hover {
   box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-  color: #d6d6d6;
+  color: white;
   transition: 500ms;
 }
 
 button:active {
   box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
-  color: #d6d6d6;
+  color: white;
   transition: 100ms;
 }
 
@@ -408,7 +386,7 @@ button:active {
 
 .wrapper .icon {
   position: relative;
-  background: #fff;
+  background: white;
   margin-bottom: 20px;
   border-radius: 50%;
   margin: 10px;
@@ -428,8 +406,8 @@ button:active {
   position: absolute;
   top: 0;
   font-size: 14px;
-  background: #fff;
-  color: #fff;
+  background: white;
+  color: white;
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -443,7 +421,7 @@ button:active {
   content: "";
   height: 8px;
   width: 8px;
-  background: #fff;
+  background: white;
   bottom: -3px;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
@@ -465,22 +443,22 @@ button:active {
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: #1877f2;
-  color: #fff;
+  background: blue;
+  color: white;
 }
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
-  background: #1da1f2;
-  color: #fff;
+  background: #45ADD2;
+  color: white;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #e4405f;
-  color: #fff;
+  background: #d62976;
+  color: white;
 }
 
 .video-container {
@@ -634,6 +612,31 @@ video {
   user-select: none;
   display: flex;
   align-items: center;
+}
+
+#checkboxContainer {
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  margin-left: 5px;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#checkboxContainer label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contenedorFiltrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
