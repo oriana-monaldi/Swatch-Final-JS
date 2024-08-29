@@ -58,8 +58,9 @@ main p {
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 30px;
-  font-size: 25px;
+  font-size: 20px;
 }
+//tipografia
 h1{
   color: $color1;
   text-align: center;
@@ -74,15 +75,23 @@ h2{
 }
 h3{
   color: $color1;
+  text-align: center;
   font-size: 25x;
   margin-left: 30px;
   font-family: 'Nunito'
 }
+
+a {
+  text-decoration: none;
+  color: $color2;
+}
+
 #checkboxContainer {
   display: flex;
+  width: 150px;
   flex-direction: column;
-  margin-left: 50px;
-  gap: 30px; 
+  margin-left: 5px;
+  gap: 10px; 
   color: $color1;
   font-size: 20px;
 }
@@ -136,6 +145,7 @@ h3{
   height: 100vh; 
 }
 
+//gift ideas logo swatch
 .logoImagen {
   max-width: 100%; 
   height: auto; 

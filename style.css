@@ -71,7 +71,7 @@
   padding: 14px 20px;
 }
 .navbar img {
-  height: 60px;
+  height: 30px;
   margin-right: 30px;
   width: 120px;
   object-fit: contain;
@@ -179,7 +179,7 @@ main p {
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 30px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 h1 {
@@ -198,16 +198,23 @@ h2 {
 
 h3 {
   color: white;
+  text-align: center;
   font-size: 25x;
   margin-left: 30px;
   font-family: "Nunito";
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #checkboxContainer {
   display: flex;
+  width: 150px;
   flex-direction: column;
-  margin-left: 50px;
-  gap: 30px;
+  margin-left: 5px;
+  gap: 10px;
   color: white;
   font-size: 20px;
 }
@@ -314,13 +321,11 @@ img {
   position: relative;
   max-height: 400px;
 }
-
 .reloj img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
-
 .reloj h3 {
   margin: 10px 0;
   color: white;
@@ -328,9 +333,7 @@ img {
   text-align: center;
   width: 100%;
 }
-
 .reloj p {
-  font-size: 1.2em;
   margin: 10px 0;
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -338,7 +341,7 @@ img {
   width: 100%;
 }
 
-.reloj button {
+button {
   margin-top: auto;
   height: 50px;
   width: 200px;
@@ -357,13 +360,13 @@ img {
   box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
 }
 
-.reloj button:hover {
+button:hover {
   box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
   color: #d6d6d6;
   transition: 500ms;
 }
 
-.reloj button:active {
+button:active {
   box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
   color: #d6d6d6;
   transition: 100ms;
@@ -392,36 +395,92 @@ img {
   transition-duration: 1s;
 }
 
-.containerOne:hover {
-  background-color: #d62976;
-  transition-duration: 0.3s;
+/* From Uiverse.io by david-mohseni */
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 10px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
 }
 
-.containerTwo:hover {
-  background-color: 0acee;
-  transition-duration: 0.3s;
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.containerFour:hover {
-  background-color: #128c7e;
-  transition-duration: 0.3s;
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: 0.3s;
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.socialSvg {
-  width: 17px;
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
-.socialSvg path {
-  fill: white;
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
 }
 
 .video-container {
@@ -518,14 +577,6 @@ video {
   object-position: center;
 }
 
-.informacion {
-  background-color: blue;
-}
-
-.informacion1 {
-  background-color: red;
-}
-
 .image-container {
   position: relative;
   width: 100%;
@@ -577,7 +628,7 @@ video {
 }
 
 .cyberpunk-checkbox-label {
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   cursor: pointer;
   user-select: none;

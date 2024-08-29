@@ -2,6 +2,7 @@ const carrito = [];
 const carritoElement = document.getElementById('carrito');
 const carritoContenido = document.getElementById('carrito-contenido');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
+const FinalizarCompra = document.getElementById('finalizar-compra');
 
 document.querySelector('.navbar-icons .icono').addEventListener('click', () => {
     carritoElement.classList.toggle('abierto');
@@ -10,7 +11,6 @@ document.querySelector('.navbar-icons .icono').addEventListener('click', () => {
 function mostrarCarrito() {
     carritoElement.classList.add('abierto');
 }
-
 
 function actualizarCarrito() {
     carritoContenido.innerHTML = ''; 
@@ -45,7 +45,6 @@ function cargarCarritoDeLocalStorage() {
         actualizarCarrito();
     }
 }
-
 
 function agregarBotonCarrito(id) {
     const producto = reloj.find(producto => producto.id === id);
@@ -107,3 +106,11 @@ vaciarCarritoBtn.addEventListener('click', () => {
         }
     });
 });
+
+
+FinalizarCompra.addEventListener('click', () =>  {
+    window.location.href = 'finalizarCompra.html'; 
+}
+
+
+)
