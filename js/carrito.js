@@ -11,11 +11,6 @@ function mostrarCarrito() {
     carritoElement.classList.add('abierto');
 }
 
-function agregarAlCarrito(producto) {
-    carrito.push(producto);
-    actualizarCarrito();
-    guardarCarritoEnLocalStorage();
-}
 
 function actualizarCarrito() {
     carritoContenido.innerHTML = ''; 
@@ -29,6 +24,7 @@ function actualizarCarrito() {
         textoElemento.innerHTML = `<p>${producto.nombre} - $${producto.precio.toLocaleString()}</p>`;
         productoElemento.appendChild(imgElemento);
         productoElemento.appendChild(textoElemento);
+
         carritoContenido.appendChild(productoElemento);
         total += producto.precio;
     });
@@ -50,11 +46,6 @@ function cargarCarritoDeLocalStorage() {
     }
 }
 
-vaciarCarritoBtn.addEventListener('click', () => {
-    carrito.length = 0;
-    actualizarCarrito();
-    localStorage.removeItem('carrito'); 
-});
 
 function agregarBotonCarrito(id) {
     const producto = reloj.find(producto => producto.id === id);
@@ -86,3 +77,33 @@ document.addEventListener('click', (event) => {
 });
 
 
+function agregarAlCarrito(producto) {
+    carrito.push(producto);
+    actualizarCarrito();
+    guardarCarritoEnLocalStorage();
+    swal("¡The product ", `${producto.nombre} was added to the cart!`, "success");
+}
+
+
+vaciarCarritoBtn.addEventListener('click', () => {
+    swal({
+        title: "¿Are you sure?",
+        text: "¡If you delete the products they cannot be recovered",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+    })
+    .then((willDelete) => {
+        if (willDelete) {
+            carrito.length = 0;
+            actualizarCarrito();
+            localStorage.removeItem('carrito'); 
+            
+            swal("¡The cart is empty", "All products have been removed!", {
+                icon: "success",
+            });
+        } else {
+            swal("You can view the products in the cart");
+        }
+    });
+});

@@ -36,8 +36,8 @@ function aplicarFiltros() {
             (checkboxVerde.checked && el.color === 'Verde') ||
             (checkboxNaranja.checked && el.color === 'Naranja') ||
             (!checkboxRojo.checked && !checkboxAmarillo.checked && !checkboxRosa.checked && !checkboxBlanco.checked &&
-             !checkboxNegro.checked && !checkboxAzul.checked && !checkboxCeleste.checked && !checkboxVerde.checked && 
-             !checkboxNaranja.checked)
+            !checkboxNegro.checked && !checkboxAzul.checked && !checkboxCeleste.checked && !checkboxVerde.checked && 
+            !checkboxNaranja.checked)
         )
         .filter(el => 
             (checkboxUrbano.checked && el.tipo === 'Urbano') ||
