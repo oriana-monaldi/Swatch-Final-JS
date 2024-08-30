@@ -1,5 +1,15 @@
-/* fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=5f347aa872d24bac9307592b5939d7e0')
-.then(response => response.json())
-.then(data => console.log(data.articles[0].title)); */
+fetch('../data/frases.json') 
+    .then(res => res.json())
+    .then(json => {
+        const frases = json.frases;
+        const randomIndex = Math.floor(Math.random() * frases.length);
+        const fraseRandom = frases[randomIndex];
 
-////prueba
+        const productContainer = document.getElementById('product-container');
+        const Text = document.createElement('p');
+        Text.textContent = fraseRandom;
+
+        productContainer.appendChild(Text);
+        Text.className = 'Text';
+    })
+    .catch(error => console.error('Error:', error));

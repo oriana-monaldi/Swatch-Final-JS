@@ -12,8 +12,8 @@
         <div class="navbar">
             <a href="./index.html"><img class="logo" src="../assets/swatchLogo.png" alt="Logo"></a>
             <div class="navbar-links">
-                <a class="navbarlink" href="../pages/relojes.html">WATCHES</a>
-                <a class="navbarlink" href="../pages/regalos.html">GIFTS</a>
+                <a class="navbarlink" href="../pages/watches.html">WATCHES</a>
+                <a class="navbarlink" href="../pages/gift.html">GIFTS</a>
                 <a class="navbarlink" href="../pages/moonswatch.html">MOONSWATCH</a>
                 <a class="navbarlink" href="../pages/theSimpson.html">THE SIMPSON</a>
             </div>
@@ -23,38 +23,95 @@
         </div>
     </header>
     <main>
-        
-        <div class="divisorTwo">
-            <video class="videoRegalos" autoplay muted loop playsinline>
-                <source  src="../assets/videoRegalos.webm" type="video/mp4">Tu navegador no soporta la etiqueta de video.
-            </video>
-            <div class="headerContainer">
-                <h1 class="ideaRegaloTitle">Gift Ideas</h1>
-                <a href="../index.html"><img class="logoImagen" src="../assets/swatchLogo.png" alt="Logo"></a>
+        <h1>All Watches</h1>
+        <h3 class="h3">Discover all our watches, from iconic classics to eye-catching contemporary designs and pop culture styles. It doesn't matter if you want to make a statement or show your fun side, we have a model for every style and moment.</h3>
+        <div class="divisorOne">
+            <img src="../assets/relojes2.jpg" alt="Relojes 2">
+            <img src="../assets/relojes1.jpg" alt="Relojes 1">
+        </div>
+        <!--Div para mostrar lo que se consume de la api-->            
+        <div id="product-container"></div>
+        <!-- ////////////////////////////////////////////-->
+        <div class="divGeneral">
+            <div class="contenedores"> </div>
+            <div class="filtrado1">
+                <h3>Watches color:</h3>
+                <div id="checkboxContainer">
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxRojo" class="cyberpunk-checkbox" value="Rojo">Rojo
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxAmarillo" class="cyberpunk-checkbox" value="Amarillo">
+                        Yellow
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxRosa" class="cyberpunk-checkbox" value="Rosa">
+                        Pink
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxBlanco" class="cyberpunk-checkbox" value="Blanco">
+                        White
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxNegro" class="cyberpunk-checkbox" value="Negro">
+                        Black
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxAzul" class="cyberpunk-checkbox" value="Azul">
+                        Blue
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxCeleste" class="cyberpunk-checkbox" value="Celeste">
+                        Light-blue
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxVerde" class="cyberpunk-checkbox" value="Verde">
+                        Green
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxNaranja" class="cyberpunk-checkbox" value="Naranja">
+                        Orange
+                    </label>
+                </div>
+                <h3>Category</h3>
+                <div id="checkboxContainer">
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxMujer" class="cyberpunk-checkbox" value="Mujer">
+                        Woman
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxHombre" class="cyberpunk-checkbox" value="Hombre">
+                        Man
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxUnisex" class="cyberpunk-checkbox" value="Unisex">
+                        Unisex
+                    </label>
+                </div>
+                <h3>Type:</h3>
+                <div id="checkboxContainer">
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxUrbano" class="cyberpunk-checkbox" value="Urbano">
+                        Classic
+                    </label>
+                    <label class="cyberpunk-checkbox-label">
+                        <input type="checkbox" id="checkboxDeportivo" class="cyberpunk-checkbox" value="Deportivo">
+                        Sport
+                    </label>
+                </div>
             </div>
+            <div class="fotos-container" id="container4"></div>
         </div>
-        <h2>Gift Ideas For Women:</h2>
-        <div class="fotos-container" id="container6"></div>
-        <div class="divisorOne">
-            <img src="../assets/regalos.jpg">
-            <img src="../assets/regalos1.jpg">
-        </div>
-        <h2>Gift Ideas For Men:</h2>
-        <div class="fotos-container" id="container7"></div>
-        <div class="divisorOne">
-            <img src="../assets/regal1.jpg">
-            <img src="../assets/fotoreagalo.jpg">
-        </div>
-        <h2>Unisex Gift Ideas:</h2>
-        <div class="fotos-container" id="container8"></div>
+
     </main>
+
     <section>
-        <!-- Carrito de Compras  -->
-        <div id="carrito" class="carrito">
-            <h2>Cart</h2>
-            <div id="carrito-contenido"></div>
-            <button id="vaciar-carrito">Empty Cart</button>
-        </div> 
+    <!-- Carrito de Compras  -->
+    <div id="carrito" class="carrito">
+        <h2>Cart</h2>
+        <div id="carrito-contenido"></div>
+        <button id="vaciar-carrito">Empty Cart</button>
+    </div>
     </section>
 
     <footer>
@@ -101,13 +158,13 @@
             </ul>
         </div>
     </footer>
-    
+        
     <script src="../js/stock.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/carrito.js"></script>
     <script src="../js/relojes.js"></script>
     <script src="../js/filtrado.js"></script>
-    <script src="../js/carrito.js"></script>
-    <script src="../js/filtrosRegalos.js"> </script>
+    <script src="../js/consumoApi.js"></script>
+
 </body>
-
-
 </html>
